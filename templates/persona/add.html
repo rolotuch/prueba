@@ -1,0 +1,17 @@
+<h1>Registrar Persona</h1>
+<!-- ingesamos esto es solo para ver que las cajas de texto ya estan creadas -->
+<!-- <input type="text" name="nombres" id="nombres" placeholder="nombres">
+<input type="text"name="apellidos" id ="apellidos" placeholder="apellidos">
+<input type="text"name="job" id ="job" placeholder="job"> -->
+
+
+<!-- si embargo django tiene una forma de ahorrarnos estos pasos -->
+
+<!-- {{ form }} -->
+
+<!-- con esto ordenamos hacia abajo todos los fields -->
+<form method="POST">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <button type="submit"> Enviar </button>
+</form>
