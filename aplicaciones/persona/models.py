@@ -8,7 +8,9 @@ from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Habilidades(models.Model):
-    """modelo para la tabla habilidades"""
+    """modelo para la tabla habilidades
+    Esto es una prueba
+    """
     habilidad = models.CharField('Habilidad', max_length=50)
 
 
